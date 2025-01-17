@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature Converter</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Temperature Converter</h1>
-        <div class="converter">
-            <input type="number" id="temperature" placeholder="Enter temperature">
-            <select id="unit">
-                <option value="Celsius">Celsius</option>
-                <option value="Fahrenheit">Fahrenheit</option>
-            </select>
-            <button onclick="convertTemperature()">Convert</button>
-            <div id="result"></div>
-        </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <a href="#">Home</a> &gt; <a href="#">Temperature Converter</a>
     </div>
-    <script src="jscript.js"></script>
-</body>
+
+    <!-- Main Content -->
+    <div class="container">
+      <h1>Temperature Converter</h1>
+
+      <div class="form-container">
+        <label for="inputTemp">Enter Temperature:</label>
+        <input type="number" id="inputTemp" placeholder="Enter temperature" />
+        
+        <label for="inputUnit">Select Unit:</label>
+        <select id="inputUnit">
+          <option value="Celsius">Celsius</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="Kelvin">Kelvin</option>
+        </select>
+
+        <button onclick="convertTemperature()">Convert</button>
+      </div>
+
+      <div class="result">
+        <p id="outputTemp">Converted temperature will appear here.</p>
+      </div>
+    </div>
+
+    <script src="project.js"></script>
+  </body>
 </html>

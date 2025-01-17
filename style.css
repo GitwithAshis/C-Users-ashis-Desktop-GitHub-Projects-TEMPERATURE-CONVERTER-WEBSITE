@@ -1,53 +1,90 @@
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to right, #00b4d8, #0077b6); /* Gradient background */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 8px;
+    padding: 30px;
+    width: 350px;
     text-align: center;
-}
-
-h1 {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
     margin-bottom: 20px;
-}
-
-.converter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-input, select, button {
-    margin: 10px;
-    padding: 10px;
-    width: 200px;
-    border-radius: 5px;
+    font-size: 2rem;
+    color: #0077b6;
+  }
+  
+  .breadcrumbs {
+    margin: 20px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .breadcrumbs a {
+    text-decoration: none;
+    color: #00b4d8;
+  }
+  
+  .breadcrumbs a:hover {
+    text-decoration: underline;
+  }
+  
+  .form-container {
+    margin-bottom: 20px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 4px;
     border: 1px solid #ccc;
-}
-
-button {
-    background-color: #007bff;
+    font-size: 1rem;
+  }
+  
+  input {
+    background-color: #f9f9f9;
+  }
+  
+  select {
+    background-color: #f9f9f9;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077b6;
     color: white;
     border: none;
+    border-radius: 4px;
+    font-size: 1rem;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#result {
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005f73;
+  }
+  
+  .result p {
     margin-top: 20px;
-    font-size: 1.2em;
-}
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0077b6;
+  }
+  
